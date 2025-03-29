@@ -1,0 +1,186 @@
+/* Estilos básicos para garantir um layout flexível */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background: #0073e6;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO - Imagem Principal */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?internet,technology') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Benefícios - Layout Responsivo */
+.benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit {
+    flex: 1 1 300px; /* Ajusta automaticamente o tamanho */
+    margin: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Lista Responsiva */
+#como-funciona ol {
+    list-style: decimal;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Formulário Responsivo */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .benefit {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    .benefit {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

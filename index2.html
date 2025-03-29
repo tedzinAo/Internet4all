@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet4All</title>
+    <style>
+        /* Estilo do layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .banner {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #0099ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .reward-ad {
+            background-color: #ffcc00;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .reward-ad:hover {
+            background-color: #ffb300;
+        }
+
+        .whatsapp-btn {
+            display: none;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            width: auto;
+            margin-top: 10px;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128c7e;
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo ao Internet4All</h1>
+    <p>Internet grátis e ilimitada para todos!</p>
+</header>
+
+<section>
+    <div class="banner">
+        <p>Banner de Anúncio #1 - Aqui pode ser um anúncio de parceiros ou promoções.</p>
+    </div>
+
+    <div class="banner">
+        <p>Banner de Anúncio #2 - Outro banner de anúncio.</p>
+    </div>
+
+    <h2>Sobre o Internet4All</h2>
+    <p>O Internet4All é um projeto que visa fornecer internet grátis e ilimitada para todos. Com nossos servidores próprios, oferecemos uma solução para quem não tem acesso a planos de dados tradicionais. Crie sua conta, ganhe moedas e receba as configurações para acessar nossa rede!</p>
+    
+    <div class="reward-ad" onclick="showWhatsAppButton()">
+        <p>Veja este anúncio e ganhe acesso ao nosso suporte no WhatsApp!</p>
+    </div>
+    
+    <button class="whatsapp-btn" id="whatsappBtn" onclick="window.location.href='https://wa.me/1555555555'">Ir para o WhatsApp</button>
+</section>
+
+<footer>
+    <p>&copy; 2025 Internet4All - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    function showWhatsAppButton() {
+        document.getElementById('whatsappBtn').style.display = 'inline-block';
+    }
+</script>
+
+</body>
+</html>

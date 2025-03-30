@@ -101,6 +101,31 @@
 	<div id="container-a2186705d04100e867f2897b8f3fe1eb"></div>
    </div>
 
+   <div id="adblock-message">Please disable your ad blocker to support us!</div>  
+
+   <script>  
+       function adblockDetected() {  
+           document.getElementById('adblock-message').style.display = 'block';  
+       }  
+
+       // A simple method to detect adblockers  
+       const testAdBlocker = () => {  
+           const testAd = document.createElement('div');  
+           testAd.innerHTML = '&nbsp;';  
+           testAd.className = 'adsbox'; // This class is often blocked by ad blockers  
+           document.body.appendChild(testAd);  
+
+           window.setTimeout(() => {  
+               if (testAd.offsetHeight === 0) {  
+                   adblockDetected();  
+               }  
+               testAd.remove();  
+           }, 100);  
+       };  
+
+       testAdBlocker();  
+   </script>  
+
     <footer>
         <p>&copy; 2025 Internet para Todos. Todos os direitos reservados.</p>
     </footer>

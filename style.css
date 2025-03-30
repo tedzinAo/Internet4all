@@ -9,7 +9,11 @@ body {
     padding: 0;
     color: #333;
 }
-
+#adblock-message {  
+    display: none;  
+    color: red;  
+    font-weight: bold;  
+}  
 /* Cabeçalho e Navegação */
 header {
     background: #0073e6;

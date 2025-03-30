@@ -21,6 +21,29 @@ header {
     padding: 15px 20px;
     text-align: center;
 }
+#baixar-vpn{
+    width: 100%;
+    /* background-color: #333; */
+}
+.divpai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#baixar-vpn div{
+    width: 200px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .191);
+    padding: 20px;
+}
+#baixar-vpn div a{
+    color: black;
+}
+a{
+    text-decoration: none;
+
+}
 
 nav ul {
     list-style: none;
@@ -113,7 +136,35 @@ form button {
     border: none;
     cursor: pointer;
 }
+.alert {  
+    background-color: #ffcc00; /* Cor de fundo amarelo */  
+    color: #000;  
+    padding: 15px;  
+    margin: 20px 0;  
+    border: 1px solid #d3a300; /* Borda mais escura */  
+    border-radius: 5px;  
+    position: relative; /* Necessário para posicionar o botão de fechar */  
+    display: none;
+}  
+#whatsApp-btn{
+    display: none;
+}
 
+#whatsApp-btn button{
+    background-color: rgb(4, 153, 4);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .191);
+}
+.closebtn {  
+    position: absolute;  
+    top: 10px;  
+    right: 15px;  
+    color: #000;  
+    font-weight: bold;  
+    cursor: pointer;  
+}  
 /* Rodapé */
 footer {
     background: #0073e6;

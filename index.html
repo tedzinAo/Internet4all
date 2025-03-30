@@ -17,16 +17,19 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#criar-conta" class="cta-btn">Criar Conta</a></li>
+                <li><a href="#como-configurar">como configurar</a></li>
+                <li><a href="#baixar-vpn" class="cta-btn">Baixar Vpn</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Internet Grátis e Ilimitada para Todos</h2>
-        <p>Crie sua conta, ganhe moedas e receba seu acesso sem limites.</p>
+        <h2 style="color: black;">Internet Grátis e Ilimitada para Todos</h2>
         <a href="https://tumblepoet.com/zqnviws3v?key=7405b14517756e7a705e5c94e9ffc78a" id="cta-btn" target="_blank">Começar Agora</a>
+        <div class="alert">  
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>   
+            Role Para baixo e click no botao ir para o whatsApp 
+        </div> 
     </section>
     <div>
 	    <script async="async" data-cfasync="false" src="//tumblepoet.com/a2186705d04100e867f2897b8f3fe1eb/invoke.js"></script>
@@ -34,7 +37,7 @@
     </div>
     <section id="sobre">
         <h2>Sobre o Projeto</h2>
-        <p>Fornecemos internet gratuita e ilimitada por meio de nossos próprios servidores, garantindo inclusão digital para todos.</p>
+        <p>Fornecemos internet gratuita e ilimitada por meio de servidores de outrem, garantindo inclusão digital para todos.</p>
         <script type="text/javascript">
 	atOptions = {
 		'key' : '56816568295bbadfcd65262a9317be67',
@@ -69,31 +72,34 @@
     <section id="como-funciona">
         <h2>Como Funciona?</h2>
         <ol>
-            <li>Crie uma conta gratuitamente.</li>
-            <li>Ganhe moedas ao interagir na plataforma.</li>
-            <li>Receba um arquivo de configuração por e-mail.</li>
+            <li>Acesse A plataforma.</li>
+            <li>Click no link pedir arquivo.</li>
+            <li>Receba um arquivo de configuração pelo whatsApp .</li>
             <li>Configure seu dispositivo e aproveite a internet ilimitada!</li>
         </ol>
     </section>
 
-    <section id="criar-conta">
-        <h2>Crie sua Conta Agora</h2>
-        <form>
-            <input type="text" placeholder="Nome Completo" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" placeholder="Senha" required>
-            <button type="submit">Registrar</button>
-        </form>
+    <section id="baixar-vpn">
+        
+        <h2> vpn apps links</h2>
+        <section class="divpai">
+        <div>
+            <a href="https://play.google.com/store/apps/details?id=com.evozi.injector&hl=en_GB" target="_blank">HTTP Injector</a>
+        </div>
+        <div>
+            <a href="https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv&hl=en_GB">NPV Tunnel</a>
+        </div>
+        </section>
     </section>
 
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu E-mail" required>
-            <textarea placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="whatsApp-btn">
+        <h2>Solicitar ficheiro</h2>
+        <button class="whatsapp-btn" id="whatsappBtn" onclick="window.location.href='https://wa.me/message/KZFK75AOQIAKJ1'">Ir para o WhatsApp</button>
+    </section>
+
+    <section id="como-configurar">
+        <h2>como configurar</h2>
+        <iframe src="" frameborder="0"></iframe>
     </section>
 
    <div>
@@ -131,6 +137,16 @@
     </footer>
 
     <script type='text/javascript' src='//pl26254124.effectiveratecpm.com/30/d6/9b/30d69bc21284e5ae3a18cf2abdac92cd.js'></script>
+    <script>
+        const alerta = document.querySelector('.alert')
+        const whatsApp_btn = document.querySelector('#whatsApp-btn')
+        const cta_btn = document.querySelector('#cta-btn').addEventListener('click',()=>{
+            alerta.style.display="block";
+            whatsApp_btn.style.display="block";
+
+            // window.location.href='#como-configurar'
+        })
+    </script>
 </body>
   </html>
           

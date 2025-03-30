@@ -6,11 +6,14 @@
     <meta name="google-adsense-account" content="ca-pub-5760748262894904">
     <title>Internet4All</title>
     <style>
-        /* Estilo do layout */
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
             background-color: #f1f1f1;
             color: #333;
         }
@@ -18,22 +21,23 @@
         header {
             background-color: #0066cc;
             color: white;
-            padding: 10px 0;
-            text-align: center;
-            position:fixed;
-            top:0;
-            left:0;
-            right:0;
-        }
-
-        section {
             padding: 20px;
-            background-color: #ffffff;
-            margin: 10px;
-            border-radius: 8px;
-            height:800px;
+            text-align: center;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
         }
 
+        main {
+            padding: 40px;
+            background-color: #ffffff;
+            margin: 80px auto 20px;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height:100%
+        }
 
         .reward-ad {
             background-color: #ffcc00;
@@ -43,6 +47,7 @@
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin-top:20px;
         }
 
         .reward-ad:hover {
@@ -58,9 +63,7 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            text-align: center;
-            width: auto;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         .whatsapp-btn:hover {
@@ -72,25 +75,16 @@
             color: white;
             text-align: center;
             padding: 10px 0;
+            position: fixed;
             bottom: 0;
             width: 100%;
-        }
-        @media screen and (min-width: 1024px) {
-    footer{
-        position:fixed;
-    }
+            margin-top: 20px;
         }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5760748262894904"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5760748262894904" crossorigin="anonymous"></script>
 </head>
 <body>
-<amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-5760748262894904">
-</amp-auto-ads>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5760748262894904"
-     crossorigin="anonymous"></script>
-<!-- Ad1 -->
+    <!-- Ad1 -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5760748262894904"
@@ -100,33 +94,30 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-    
-<header>
-    <h1>Bem-vindo ao Internet4All</h1>
-    <p>Internet grátis e ilimitada para todos!</p>
-</header>
+    <header>
+        <h1>Bem-vindo ao Internet4All</h1>
+        <p>Internet grátis e ilimitada para todos!</p>
+    </header>
 
-<section>
+    <main>
+        <h2>Sobre o Internet4All</h2>
+        <p>O Internet4All é um projeto que visa fornecer internet grátis e ilimitada para todos. Crie sua conta, ganhe moedas e receba as configurações para acessar nossa rede!</p>
+        
+        <div class="reward-ad" onclick="showWhatsAppButton()">
+            <p>Veja este anúncio e ganhe acesso ao nosso suporte no WhatsApp!</p>
+        </div>
 
-    <h2>Sobre o Internet4All</h2>
-    <p>O Internet4All é um projeto que visa fornecer internet grátis e ilimitada para todos. Com nossos servidores próprios, oferecemos uma solução para quem não tem acesso a planos de dados tradicionais. Crie sua conta, ganhe moedas e receba as configurações para acessar nossa rede!</p>
-    
-    <div class="reward-ad" onclick="showWhatsAppButton()">
-        <p>Veja este anúncio e ganhe acesso ao nosso suporte no WhatsApp!</p>
-    </div>
-    
-    <button class="whatsapp-btn" id="whatsappBtn" onclick="window.location.href='https://wa.me/message/KZFK75AOQIAKJ1'">Ir para o WhatsApp</button>
-</section>
+        <button class="whatsapp-btn" id="whatsappBtn" onclick="window.location.href='https://wa.me/message/KZFK75AOQIAKJ1'">Ir para o WhatsApp</button>
+    </main>
 
-<footer>
-    <p>&copy; 2025 Internet4All - Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Internet4All - Todos os direitos reservados.</p>
+    </footer>
 
-<script>
-    function showWhatsAppButton() {
-        document.getElementById('whatsappBtn').style.display = 'inline-block';
-    }
-</script>
-
+    <script>
+        function showWhatsAppButton() {
+            document.getElementById('whatsappBtn').style.display = 'inline-block';
+        }
+    </script>
 </body>
 </html>

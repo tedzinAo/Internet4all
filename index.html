@@ -113,25 +113,26 @@
 
    <script>  
        function adblockDetected() {  
-           document.getElementById('adblock-message').style.display = 'block';  
-       }  
+       document.addEventListener('DOMContentLoaded', function () {
+    const adBlockTest = document.createElement('div');
+    adBlockTest.className = 'ad-banner';
+    adBlockTest.style.display = 'none';
+    document.body.appendChild(adBlockTest);
 
-       // A simple method to detect adblockers  
-       const testAdBlocker = () => {  
-           const testAd = document.createElement('div');  
-           testAd.innerHTML = '&nbsp;';  
-           testAd.className = 'adsbox'; // This class is often blocked by ad blockers  
-           document.body.appendChild(testAd);  
+    setTimeout(() => {
+        if (getComputedStyle(adBlockTest).display === 'none') {
+            document.body.innerHTML = `
+                <div style="text-align: center; padding: 20px;">
+                    <h1>Bloqueador de Anúncios Detectado!</h1>
+                    <p>Para continuar navegando, desative seu bloqueador de anúncios.</p>
+                    <button onclick="location.reload()">Tentar Novamente</button>
+                </div>
+            `;
+        }
+        document.body.removeChild(adBlockTest);
+    }, 100);
+});
 
-           window.setTimeout(() => {  
-               if (testAd.offsetHeight === 0) {  
-                   adblockDetected();  
-               }  
-               testAd.remove();  
-           }, 100);  
-       };  
-
-       testAdBlocker();  
    </script>  
 
     <footer>

@@ -118,9 +118,17 @@
     <script type='text/javascript' src='//pl26254124.effectiveratecpm.com/30/d6/9b/30d69bc21284e5ae3a18cf2abdac92cd.js'></script>
     
 </body>
-	<script>  
-       function adblockDetected() {  
-       document.addEventListener('DOMContentLoaded', function () {
+<script>  
+const alerta = document.querySelector('.alert')
+        const whatsApp_btn = document.querySelector('#whatsApp-btn')
+        const cta_btn = document.querySelector('#cta-btn').addEventListener('click',()=>{
+            alerta.style.display="block";
+            whatsApp_btn.style.display="block";
+
+            // window.location.href='#como-configurar'
+        })
+function adblockDetected() {  
+document.addEventListener('DOMContentLoaded', function () {
     const adBlockTest = document.createElement('div');
     adBlockTest.className = 'ad-banner';
     adBlockTest.style.display = 'none';
@@ -139,15 +147,6 @@
         document.body.removeChild(adBlockTest);
     }, 100);
 });
-
-        const alerta = document.querySelector('.alert')
-        const whatsApp_btn = document.querySelector('#whatsApp-btn')
-        const cta_btn = document.querySelector('#cta-btn').addEventListener('click',()=>{
-            alerta.style.display="block";
-            whatsApp_btn.style.display="block";
-
-            // window.location.href='#como-configurar'
-        })
    </script>  
   </html>
           

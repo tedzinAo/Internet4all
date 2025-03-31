@@ -35,7 +35,7 @@ async function verificarIP() {
 
 function bloquearAcesso(mensagem) {
     document.body.innerHTML = `
-        <div style="text-align: center; padding: 20px;">
+        <div id="block" style="text-align: center; padding: 20px;">
             <h1>Acesso Bloqueado!
                 Desligue a VPN
             </h1>

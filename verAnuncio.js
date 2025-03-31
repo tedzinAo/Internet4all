@@ -26,7 +26,7 @@ let inativos = 0;
     });
 
     if (!anunciosAtivos){ exibirMensagemErro();}
-    if(inativos > 10 ){
+    if(ativos < 4 ){
         exibirMensagemErro()
     }
     

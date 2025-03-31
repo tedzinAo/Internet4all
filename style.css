@@ -63,6 +63,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+#user-data-container{
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+}
  #user-data{
       box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, .192) ;
       width: 300px;

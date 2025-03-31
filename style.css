@@ -64,6 +64,7 @@ nav ul li a {
     text-decoration: none;
 }
 #user-data-container{
+    background-color: #000;
     width: 100%;
     justify-content: center;
     align-items:center;

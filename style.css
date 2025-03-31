@@ -166,6 +166,10 @@ form button {
 
 .config-1,.config-2{
     max-width:500px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #whatsApp-btn button{

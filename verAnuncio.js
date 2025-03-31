@@ -1,6 +1,6 @@
 // Script atualizado para verificar anúncios e exibir mensagem de erro
-let ativos = 0
-let inativos = 0
+let ativos = 0;
+let inativos = 0;
 (function verificarAnuncios() {
     // Seleciona elementos relacionados a anúncios
     const anuncios = document.querySelectorAll("[id*='container-'], script[src*='adsbygoogle'], script[src*='tumblepoet'], script[src*='highperformanceformat']");

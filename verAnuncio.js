@@ -3,7 +3,7 @@ let ativos = 0;
 let inativos = 0;
 (function verificarAnuncios() {
     // Seleciona elementos relacionados a anúncios
-    const anuncios = document.querySelectorAll("[id*='container-'], script[src*='adsbygoogle'], script[src*='tumblepoet'], script[src*='highperformanceformat']");
+    const anuncios = document.querySelectorAll("[id*='container-'],script[src*='tumblepoet'], script[src*='highperformanceformat']");
 
     if (anuncios.length === 0) {
         exibirMensagemErro();

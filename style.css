@@ -164,6 +164,10 @@ form button {
     display: none;
 }
 
+.config-1,.config-2{
+    max-width:500px ;
+}
+
 #whatsApp-btn button{
     background-color: rgb(4, 153, 4);
     padding: 20px;

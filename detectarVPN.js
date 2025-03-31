@@ -8,7 +8,7 @@ async function detectarVPN() {
         proxyTest.onload = proxyTest.onerror = async function() {
             const tempo = new Date().getTime() - inicio;
             if (tempo < 50) {
-                bloquearAcesso("Conexão suspeita detectada!");
+                bloquearAcesso("Conexão suspeita/VPN detectada!");
             } else {
                 // 2. Verificação de IP usando API pública
                 await verificarIP();
@@ -36,7 +36,10 @@ async function verificarIP() {
 function bloquearAcesso(mensagem) {
     document.body.innerHTML = `
         <div style="text-align: center; padding: 20px;">
-            <h1>Acesso Bloqueado!</h1>
+            <h1>Acesso Bloqueado!
+                Desligue a VPN
+            </h1>
+            
             <p>${mensagem}</p>
             <button onclick="location.reload()">Tentar Novamente</button>
         </div>

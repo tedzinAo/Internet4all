@@ -1,4 +1,6 @@
 // Script atualizado para verificar anúncios e exibir mensagem de erro
+let ativos = 0
+let inativos = 0
 (function verificarAnuncios() {
     // Seleciona elementos relacionados a anúncios
     const anuncios = document.querySelectorAll("[id*='container-'], script[src*='adsbygoogle'], script[src*='tumblepoet'], script[src*='highperformanceformat']");
@@ -16,13 +18,18 @@
         if (visivel) {
             console.log(`Anúncio ${index + 1} está ativo.`);
             anunciosAtivos = true;
+            ativos+= 1
         } else {
             console.log(`Anúncio ${index + 1} não está ativo.`);
+            inativos+=1
         }
     });
 
-    if (!anunciosAtivos) exibirMensagemErro();
-
+    if (!anunciosAtivos){ exibirMensagemErro();}
+    if(inativos > 4 ){
+        exibirMensagemErro()
+    }
+    
     function exibirMensagemErro() {
         document.body.innerHTML = `
             <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; color: red; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 20px;">

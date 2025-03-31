@@ -64,10 +64,16 @@ nav ul li a {
     text-decoration: none;
 }
 #user-data-container{
+    display: flex;
     background-color: #000;
     width: 100%;
     justify-content: center;
     align-items:center;
+}
+#comecar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  #user-data{
       box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, .192) ;

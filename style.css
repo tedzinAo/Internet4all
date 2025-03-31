@@ -165,7 +165,7 @@ form button {
 }
 
 .config-1,.config-2{
-    max-width:500px ;
+    width:100% ;
     display: flex;
     flex-direction: column;
     justify-content: center;

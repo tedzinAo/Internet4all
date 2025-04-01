@@ -35,6 +35,7 @@ function bloquearAcesso(motivo) {
         <div style="text-align: center; padding: 20px; background-color: #f8d7da; color: #721c24;">
             <h1>Acesso Bloqueado!</h1>
             <p>${motivo}</p>
+            <p>Desligue a VPN ou desabilite o Proxy</p>
             <button onclick="location.reload()">Tentar Novamente</button>
         </div>
     `;
